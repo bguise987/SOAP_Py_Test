@@ -8,6 +8,7 @@
 # Note: This Python script makes use of the Python package SOAPpy, which requires wstools
 
 from SOAPpy import WSDL
+# This file contains information on how to interface with the API
 wsdlFile = 'ndfdXML.wsdl'
 server = WSDL.Proxy(wsdlFile)
 keys = server.methods.keys()
